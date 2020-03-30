@@ -1,19 +1,30 @@
 import React from 'react';
-import ClassCounter from './Compoments/classCounter'
-import HookCounter from './Compoments/HookCounter1'
-import HookCounter2 from './Compoments/HookCounter2'
-import HookCounter3 from './Compoments/HookCounter3'
-import HookCounter4 from './Compoments/HookCounter4'
+// import ClassCounter from './Compoments/UseState/classCounter'
+// import HookCounter from './Compoments/UseState/HookCounter1'
+// import HookCounter2 from './Compoments/UseState/HookCounter2'
+// import HookCounter3 from './Compoments/UseState/HookCounter3'
+// import HookCounter4 from './Compoments/UseState/HookCounter4'
+// import ClassCounterOne from './Compoments/UseEffect/ClassCounterOne'
+// import UseEffect1 from './Compoments/UseEffect/UseEffect1'
+// import ClassMouse from './Compoments/UseEffect/ClassMouse'
+import UseEffectMouse from './Compoments/UseEffect/UseEffectMouse'
+import MouseContainer from './Compoments/UseEffect/MouseContainer'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ClassCounter />
+      {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
       {/* <HookCounter2 /> */}
       {/* <HookCounter3 /> */}
-      <HookCounter4 />
+      {/* <HookCounter4 /> */}
+
+      {/* <ClassCounterOne /> */}
+      {/* <UseEffect1 /> */}
+      {/* <ClassMouse /> */}
+      {/* <UseEffectMouse /> */}
+      <MouseContainer />
     </div>
   );
 }
