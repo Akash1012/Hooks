@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Component } from 'react'
 
 const UseEffectMouse = () => {
     const [x, setX] = useState(0)
@@ -17,7 +17,8 @@ const UseEffectMouse = () => {
             console.log("Compoment unmounting code .....")
             window.removeEventListener('mousemove', logMousePostion)
         }
-    }, [])
+    }, []) 
+    // ye pass kr n se hum log Componentdidmount ko copy kr sakte , bus ek bar call hoga ye .... []
 
     return (
         <div>

@@ -7,8 +7,11 @@ import React from 'react';
 // import ClassCounterOne from './Compoments/UseEffect/ClassCounterOne'
 // import UseEffect1 from './Compoments/UseEffect/UseEffect1'
 // import ClassMouse from './Compoments/UseEffect/ClassMouse'
-import UseEffectMouse from './Compoments/UseEffect/UseEffectMouse'
-import MouseContainer from './Compoments/UseEffect/MouseContainer'
+// import UseEffectMouse from './Compoments/UseEffect/UseEffectMouse'
+// import MouseContainer from './Compoments/UseEffect/MouseContainer'
+// import IntervalClassCounter from './Compoments/UseEffect/IntervalClassCounter'
+// import UseEffectTech from './Compoments/UseEffect/UseEffectTech'
+import UseEffectIntervalClassCounter from './Compoments/UseEffect/UseEffectIntervalClassCounter'
 import './App.css';
 
 function App() {
@@ -24,7 +27,11 @@ function App() {
       {/* <UseEffect1 /> */}
       {/* <ClassMouse /> */}
       {/* <UseEffectMouse /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      {/* <IntervalClassCounter/> */}
+      {/* <UseEffectTech/> */}
+      <UseEffectIntervalClassCounter/>
+      
     </div>
   );
 }

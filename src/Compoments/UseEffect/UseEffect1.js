@@ -7,7 +7,7 @@ const UseEffect1 = () => {
     useEffect(() => {
         console.log("use effect is calling ....")
         document.title = `You Clicked ${count} times`
-    }, [count])
+    }, [count]) // agr count update hoga tab useEffect chalega nhi to nhi chale ga
 
     const increment = () => {
         setCount(prevState => prevState + 1)
