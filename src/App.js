@@ -11,7 +11,9 @@ import React from 'react';
 // import MouseContainer from './Compoments/UseEffect/MouseContainer'
 // import IntervalClassCounter from './Compoments/UseEffect/IntervalClassCounter'
 // import UseEffectTech from './Compoments/UseEffect/UseEffectTech'
-import UseEffectIntervalClassCounter from './Compoments/UseEffect/UseEffectIntervalClassCounter'
+// import UseEffectIntervalClassCounter from './Compoments/UseEffect/UseEffectIntervalClassCounter'
+
+import DataFetching from './Compoments/FetchingData/DataFetching'
 import './App.css';
 
 function App() {
@@ -28,10 +30,10 @@ function App() {
       {/* <ClassMouse /> */}
       {/* <UseEffectMouse /> */}
       {/* <MouseContainer /> */}
-      {/* <IntervalClassCounter/> */}
+      {/* <IntervalClassCounter /> */}
       {/* <UseEffectTech/> */}
-      <UseEffectIntervalClassCounter/>
-      
+      {/* <UseEffectIntervalClassCounter /> */}
+      <DataFetching />
     </div>
   );
 }
