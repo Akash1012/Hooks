@@ -22,33 +22,15 @@ import React, { useReducer } from 'react';
 import './App.css';
 // import { UserProvider, ChannelProvider } from './userContext';
 
-// import CompomentA from './Compoments/ContextReducers/CompomentA'
-// import CompomentB from './Compoments/ContextReducers/CompomentB'
-// import CompomentC from './Compoments/ContextReducers/CompomentC'
-// import { CountContext, CountContextProvider } from './Compoments/ContextReducers/rootContext'
-import Reducers from './Compoments/ContextReducers/Reducers'
 
+// import Reducers from './Compoments/ContextReducers/Reducers'
 
-// const initialState = 0
-
-// const reducer = (state, action) => {
-//   switch (action) {
-//     case 'increment':
-//       return state + 1
-//     case 'decrement':
-//       return state + 1
-//     case 'reset':
-//       return initialState
-//     default:
-//       return state
-//   }
-// }
+import DataFetchingOne from './Compoments/FetchingData/DataFetchingOne'
+import DataFetchingUsingReducer from './Compoments/FetchingData/DataFetchingUsingReducer'
 
 function App() {
-  // const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      {/* Count - {count} */}
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
       {/* <HookCounter2 /> */}
@@ -76,12 +58,13 @@ function App() {
       {/* <Counter1 /> */}
       {/* <Counter2 /> */}
       {/* <Counter3 /> */}
-      {/* <CountContextProvider value={{ countState: count, countDispatch: dispatch }}>
-        <CompomentA />
-        <CompomentB />
-        <CompomentC />
-      </CountContextProvider> */}
-      <Reducers />
+
+
+      {/* <h2>Global Reducer </h2>
+      <Reducers /> */}
+
+      {/* <DataFetchingOne /> */}
+      <DataFetchingUsingReducer />
 
     </div>
   );
