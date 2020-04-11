@@ -5,7 +5,7 @@ const DataFetching = () => {
     const [posts, setPosts] = useState({})
     // const [posts, setPosts] = useState([])
     const [id, setId] = useState({ setData: '' })
-    const [btn, setBtn] = useState(1)
+    const [btn, setBtn] = useState(0)
 
     useEffect(() => {
         axios.get(`https://jsonplaceholder.typicode.com/posts/${btn}`)
@@ -25,8 +25,9 @@ const DataFetching = () => {
         })
     )
 
-    const handlePost = () => {
+    const handlePost = (e) => {
         setBtn(id.setData)
+        setId({ setData: '' })
     }
 
     return (

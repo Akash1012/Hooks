@@ -12,6 +12,7 @@ const UseEffectIntervalClassCounter = () => {
         const interval = setInterval(tick, 1000)
 
         return (() => {
+            console.log("Akash")
             clearInterval(interval)
         })
     }, [count])
