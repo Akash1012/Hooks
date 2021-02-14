@@ -34,8 +34,7 @@ const DataFetching = () => {
         <div>
             <input type="text" name="setData" value={id.setData} onChange={setdata} />
             <button onClick={handlePost}>Fetch Post</button>
-            <h3>Hello -- > {id.setData}</h3>
-
+            <h3>Hello : {id.setData}</h3>
             {/* <ul>
                 {posts.map(post => (
                     <li key={post.id}>{post.title}</li>

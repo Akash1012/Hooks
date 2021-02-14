@@ -17,13 +17,13 @@ const UseEffectMouse = () => {
             console.log("Compoment unmounting code .....")
             window.removeEventListener('mousemove', logMousePostion)
         }
-    }, []) 
+    }, [])
     // ye pass kr n se hum log Componentdidmount ko copy kr sakte , bus ek bar call hoga ye .... []
 
     return (
         <div>
-            X --> {x}
-            Y --> {y}
+            X : {x}
+            Y : {y}
         </div>
     )
 }

@@ -6,7 +6,7 @@ class CompomentE extends Component {
     render() {
         return (
             <div>
-                {/* CompomentE ---> Context -- {this.context} */}
+                CompomentE --- Context -- {this.context}
                 <CompomentF />
             </div>
         )

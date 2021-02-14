@@ -6,6 +6,7 @@ const HookCounter = () => {
     const increment = () => {
         setCount(prevCount => prevCount + 1)
     }
+
     return (
         <div>
             <button onClick={increment}>count {count}</button>

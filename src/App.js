@@ -1,4 +1,8 @@
 import React, { useReducer } from 'react';
+
+import Input from './Compoments/DynamicField/Input'
+import UserForm from './Compoments/WithOutCustomHooks/UserForm'
+import ClassTimer from './Compoments/UseRefHook/ClassTimer'
 // import ClassCounter from './Compoments/UseState/classCounter'
 // import HookCounter from './Compoments/UseState/HookCounter1'
 // import HookCounter2 from './Compoments/UseState/HookCounter2'
@@ -18,12 +22,12 @@ import React, { useReducer } from 'react';
 // import Counter2 from './Compoments/Reducer/Counter2'
 // import Counter3 from './Compoments/Reducer/Counter3'
 
-// import CompomentC from './Compoments/Context/CompomentC'
+import CompomentC from './Compoments/Context/CompomentC'
 import './App.css';
-// import { UserProvider, ChannelProvider } from './userContext';
+import { UserProvider, ChannelProvider } from './userContext';
 
 
-// import Reducers from './Compoments/ContextReducers/Reducers'
+import Reducers from './Compoments/ContextReducers/Reducers'
 
 import DataFetchingOne from './Compoments/FetchingData/DataFetchingOne'
 import DataFetchingUsingReducer from './Compoments/FetchingData/DataFetchingUsingReducer'
@@ -31,6 +35,9 @@ import DataFetchingUsingReducer from './Compoments/FetchingData/DataFetchingUsin
 function App() {
   return (
     <div className="App">
+      {/* <ClassTimer /> */}
+      <UserForm />
+      <Input />
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
       {/* <HookCounter2 /> */}
@@ -49,22 +56,22 @@ function App() {
 
 
       {/* jab hum log userProvider ko comment kr dege to userConsumer default lega ho hum log createContext mai pass keye hoge */}
-      {/* <UserProvider value="Akash Gupta">
+      <UserProvider value="Akash Gupta">
         <ChannelProvider value="Code With Me">
           <CompomentC />
         </ChannelProvider>
-      </UserProvider> */}
+      </UserProvider>
 
       {/* <Counter1 /> */}
       {/* <Counter2 /> */}
       {/* <Counter3 /> */}
 
 
-      {/* <h2>Global Reducer </h2>
-      <Reducers /> */}
+      {/* <h2>Global Reducer </h2>*/}
+      <Reducers />
 
       {/* <DataFetchingOne /> */}
-      <DataFetchingUsingReducer />
+      {/* <DataFetchingUsingReducer /> */}
 
     </div>
   );

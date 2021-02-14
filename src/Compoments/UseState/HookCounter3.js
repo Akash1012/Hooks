@@ -12,8 +12,8 @@ const HookCounter3 = () => {
             <form>
                 <input type="text" name="firstName" onChange={handleInputChange} />
                 <input type="text" name="lastName" onChange={handleInputChange} />
-                <h2>Your First Name is -> {name.firstName}</h2>
-                <h2>Your Last Name is -> {name.lastName}</h2>
+                <h2>Your First Name is  {name.firstName}</h2>
+                <h2>Your Last Name is  {name.lastName}</h2>
                 <input type="submit" />
             </form>
         </div>

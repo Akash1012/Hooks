@@ -5,7 +5,7 @@ const MouseContainer = () => {
     const [display, setDisplay] = useState(true)
 
     const toggle = () => {
-        setDisplay(false)
+        setDisplay(!display)
     }
     return (
         <div>

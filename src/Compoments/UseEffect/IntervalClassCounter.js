@@ -10,11 +10,11 @@ class IntervalClassCounter extends React.Component {
     }
 
     componentDidMount() {
-        this.fake = setInterval(this.tick, 1000)
+        this.interval = setInterval(this.tick, 1000)
     }
 
     componentWillUnmount() {
-        clearInterval(this.fake)
+        clearInterval(this.interval)
     }
 
     tick = () => {
@@ -26,7 +26,6 @@ class IntervalClassCounter extends React.Component {
     }
 
     render() {
-        console.log(this.fake)
         return <h1>{this.state.count}</h1>
     }
 }
