@@ -27,8 +27,6 @@ const Input = () => {
         const values = [...inputFields];
         values[index][event.target.name] = event.target.value
         setInputFields(values)
-
-
         console.log("Value", values)
     }
 

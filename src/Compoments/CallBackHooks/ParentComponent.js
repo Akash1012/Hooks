@@ -13,6 +13,10 @@ function ParentComponent() {
 
 	// Only changes if one of the dependencies has changed
 
+	// useCallback is a hook that will return a memoized version of the callback that only changes 
+	// if one of the inputs has changed. This is useful when passing callbacks to optimized child components 
+	// that rely on reference equality to prevent unnecessary renders (e.g. shouldComponentUpdate).
+
 	const incrementSalary = useCallback(() => {
 		setSalary(salary + 1000)
 	}, [salary])
