@@ -22,6 +22,9 @@ import ClassTimer from './Compoments/UseRefHook/ClassTimer'
 // import Counter2 from './Compoments/Reducer/Counter2'
 // import Counter3 from './Compoments/Reducer/Counter3'
 
+
+import Main from './Compoments/ContextWithReducer/main'
+
 import CompomentC from './Compoments/Context/CompomentC'
 import './App.css';
 import { UserProvider, ChannelProvider } from './userContext';
@@ -33,48 +36,49 @@ import DataFetchingOne from './Compoments/FetchingData/DataFetchingOne'
 import DataFetchingUsingReducer from './Compoments/FetchingData/DataFetchingUsingReducer'
 
 function App() {
-  return (
-    <div className="App">
-      {/* <ClassTimer /> */}
-      <UserForm />
-      <Input />
-      {/* <ClassCounter /> */}
-      {/* <HookCounter /> */}
-      {/* <HookCounter2 /> */}
-      {/* <HookCounter3 /> */}
-      {/* <HookCounter4 /> */}
+    return (
+        <div className="App">
+            {/* <ClassTimer /> */}
+            <UserForm />
+            <Input />
+            {/* <ClassCounter /> */}
+            {/* <HookCounter /> */}
+            {/* <HookCounter2 /> */}
+            {/* <HookCounter3 /> */}
+            {/* <HookCounter4 /> */}
 
-      {/* <ClassCounterOne /> */}
-      {/* <UseEffect1 /> */}
-      {/* <ClassMouse /> */}
-      {/* <UseEffectMouse /> */}
-      {/* <MouseContainer /> */}
-      {/* <IntervalClassCounter /> */}
-      {/* <UseEffectTech/> */}
-      {/* <UseEffectIntervalClassCounter /> */}
-      {/* <DataFetching /> */}
+            {/* <ClassCounterOne /> */}
+            {/* <UseEffect1 /> */}
+            {/* <ClassMouse /> */}
+            {/* <UseEffectMouse /> */}
+            {/* <MouseContainer /> */}
+            {/* <IntervalClassCounter /> */}
+            {/* <UseEffectTech/> */}
+            {/* <UseEffectIntervalClassCounter /> */}
+            {/* <DataFetching /> */}
 
 
-      {/* jab hum log userProvider ko comment kr dege to userConsumer default lega ho hum log createContext mai pass keye hoge */}
-      <UserProvider value="Akash Gupta">
+            {/* jab hum log userProvider ko comment kr dege to userConsumer default lega ho hum log createContext mai pass keye hoge */}
+            {/* <UserProvider value="Akash Gupta">
         <ChannelProvider value="Code With Me">
           <CompomentC />
         </ChannelProvider>
-      </UserProvider>
+      </UserProvider> */}
 
-      {/* <Counter1 /> */}
-      {/* <Counter2 /> */}
-      {/* <Counter3 /> */}
+            {/* <Counter1 /> */}
+            {/* <Counter2 /> */}
+            {/* <Counter3 /> */}
 
 
-      {/* <h2>Global Reducer </h2>*/}
-      <Reducers />
+            {/* <h2>Global Reducer </h2>*/}
+            <Reducers />
 
-      {/* <DataFetchingOne /> */}
-      {/* <DataFetchingUsingReducer /> */}
+            {/* <DataFetchingOne /> */}
+            {/* <DataFetchingUsingReducer /> */}
+            <Main />
 
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;
