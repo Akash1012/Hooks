@@ -1,8 +1,9 @@
-import React, { useReducer } from 'react';
+import React, { useReducer } from "react";
 
-import Input from './Compoments/DynamicField/Input'
-import UserForm from './Compoments/WithOutCustomHooks/UserForm'
-import ClassTimer from './Compoments/UseRefHook/ClassTimer'
+import Input from "./Compoments/DynamicField/Input";
+import UserForm from "./Compoments/WithOutCustomHooks/UserForm";
+import ClassTimer from "./Compoments/UseRefHook/ClassTimer";
+import ImageUpload from "./Compoments/ImageUpload/index";
 // import ClassCounter from './Compoments/UseState/classCounter'
 // import HookCounter from './Compoments/UseState/HookCounter1'
 // import HookCounter2 from './Compoments/UseState/HookCounter2'
@@ -22,73 +23,67 @@ import ClassTimer from './Compoments/UseRefHook/ClassTimer'
 // import Counter2 from './Compoments/Reducer/Counter2'
 // import Counter3 from './Compoments/Reducer/Counter3'
 
+import Main from "./Compoments/ContextWithReducer/main";
 
-import Main from './Compoments/ContextWithReducer/main'
+import CompomentC from "./Compoments/Context/CompomentC";
+import "./App.css";
+import { UserProvider, ChannelProvider } from "./userContext";
 
-import CompomentC from './Compoments/Context/CompomentC'
-import './App.css';
-import { UserProvider, ChannelProvider } from './userContext';
+import Reducers from "./Compoments/ContextReducers/Reducers";
 
-
-import Reducers from './Compoments/ContextReducers/Reducers'
-
-import DataFetchingOne from './Compoments/FetchingData/DataFetchingOne'
-import DataFetchingUsingReducer from './Compoments/FetchingData/DataFetchingUsingReducer'
+import DataFetchingOne from "./Compoments/FetchingData/DataFetchingOne";
+import DataFetchingUsingReducer from "./Compoments/FetchingData/DataFetchingUsingReducer";
 
 function App() {
-    return (
-        <div className="App">
-            {/* <ClassTimer /> */}
-            <UserForm />
-            <Input />
-            {/* <ClassCounter /> */}
-            {/* <HookCounter /> */}
-            {/* <HookCounter2 /> */}
-            {/* <HookCounter3 /> */}
-            {/* <HookCounter4 /> */}
+  return (
+    <div className="App">
+      {/* <ClassTimer /> */}
+      {/* <UserForm />
+            <Input /> */}
+      {/* <ClassCounter /> */}
+      {/* <HookCounter /> */}
+      {/* <HookCounter2 /> */}
+      {/* <HookCounter3 /> */}
+      {/* <HookCounter4 /> */}
 
-            {/* <ClassCounterOne /> */}
-            {/* <UseEffect1 /> */}
-            {/* <ClassMouse /> */}
-            {/* <UseEffectMouse /> */}
-            {/* <MouseContainer /> */}
-            {/* <IntervalClassCounter /> */}
-            {/* <UseEffectTech/> */}
-            {/* <UseEffectIntervalClassCounter /> */}
-            {/* <DataFetching /> */}
+      {/* <ClassCounterOne /> */}
+      {/* <UseEffect1 /> */}
+      {/* <ClassMouse /> */}
+      {/* <UseEffectMouse /> */}
+      {/* <MouseContainer /> */}
+      {/* <IntervalClassCounter /> */}
+      {/* <UseEffectTech/> */}
+      {/* <UseEffectIntervalClassCounter /> */}
+      {/* <DataFetching /> */}
 
-
-            {/* jab hum log userProvider ko comment kr dege to userConsumer default lega ho hum log createContext mai pass keye hoge */}
-            {/* <UserProvider value="Akash Gupta">
+      {/* jab hum log userProvider ko comment kr dege to userConsumer default lega ho hum log createContext mai pass keye hoge */}
+      {/* <UserProvider value="Akash Gupta">
         <ChannelProvider value="Code With Me">
           <CompomentC />
         </ChannelProvider>
       </UserProvider> */}
 
-            {/* <Counter1 /> */}
-            {/* <Counter2 /> */}
-            {/* <Counter3 /> */}
+      {/* <Counter1 /> */}
+      {/* <Counter2 /> */}
+      {/* <Counter3 /> */}
 
+      {/* <h2>Global Reducer </h2>*/}
+      <Reducers />
 
-            {/* <h2>Global Reducer </h2>*/}
-            <Reducers />
-
-            {/* <DataFetchingOne /> */}
-            {/* <DataFetchingUsingReducer /> */}
-            <Main />
-
-        </div>
-    );
+      {/* <DataFetchingOne /> */}
+      {/* <DataFetchingUsingReducer /> */}
+      {/* <Main /> */}
+      <ImageUpload />
+    </div>
+  );
 }
 
 export default App;
-
 
 // 3 Steps are there to create a Context
 // 1.Create a context
 // 2.Provide a context value
 // 3.Consume the context value
-
 
 // useReducer is a hook is used for state management
 

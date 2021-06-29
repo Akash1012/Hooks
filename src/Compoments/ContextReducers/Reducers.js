@@ -2,15 +2,21 @@ import React, { useReducer } from 'react'
 import CompomentA from './CompomentA'
 import CompomentB from './CompomentB'
 import CompomentC from './CompomentC'
-import { CountContextProvider } from './rootContext'
+import { CountContextProvider } from './rootContext' // Provider
 
 const Reducers = () => {
-    const initialState = 0
+    const initialState = {
+        abc: 0,
+        name: "Akash"
+    }
 
     const reducer = (state, action) => {
         switch (action) {
             case 'increment':
-                return state + 1
+                return {
+                    ...state,
+                    abc: state.abc + 1
+                }
             case 'decrement':
                 return state - 1
             case 'reset':
@@ -20,13 +26,15 @@ const Reducers = () => {
         }
     }
     const [count, dispatch] = useReducer(reducer, initialState)
+
+    // const { abc } = count;
     return (
         <div>
-            Count - {count}
+            Count -
             <CountContextProvider value={{ countState: count, countDispatch: dispatch }}>
                 <CompomentA />
-                <CompomentB />
-                <CompomentC />
+                {/* <CompomentB />
+                <CompomentC /> */}
             </CountContextProvider>
         </div>
     )

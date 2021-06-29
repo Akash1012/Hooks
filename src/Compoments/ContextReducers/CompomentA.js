@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
-import { CountContext } from './rootContext'
+import { CountContext } from './rootContext' // CreateContext
 
 const CompomentA = () => {
 
-    const countContext = useContext(CountContext)
+    const countContext = useContext(CountContext) // create context
+
+    console.log("Context", countContext)
 
     const increment = () => {
         countContext.countDispatch('increment')
@@ -18,7 +20,7 @@ const CompomentA = () => {
     }
     return (
         <div>
-            <h3>CompomentA--- {countContext.countState}</h3>
+            <h3>CompomentA--- {countContext.countState.abc}</h3>
             <button onClick={increment}>Increment</button>
             <button onClick={decrement}>Decrement</button>
             <button onClick={reset}>Reset</button>
