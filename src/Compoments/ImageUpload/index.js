@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { UploadOutlined } from "@ant-design/icons";
 import { message, Upload, Button } from "antd";
 
+let data = [];
+
 const ImageUpload = () => {
   const [image, setImage] = useState([]);
   const [base64, setBase64] = useState([]);
@@ -40,19 +42,25 @@ const ImageUpload = () => {
     setImage(fileList);
   };
 
-  let data = [];
   const postData = () => {
     console.log("data");
 
-    setStore([
-      ...store,
-      ...image.map((im) => ({
-        url: im.base64,
-      })),
-    ]);
+    image.map((im) => {
+      const url = im.base64;
+      data.push({ url });
+    });
+
+    console.log("STORE", data);
+
+    // setStore([
+    //   ...store,
+    //   ...image.map((im) => ({
+    //     url: im.base64,
+    //   })),
+    // ]);
   };
 
-  console.log("STORE", store);
+  console.log("STORE", data);
 
   return (
     <div>
