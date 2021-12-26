@@ -1,9 +1,10 @@
-import React, { useReducer } from "react";
+import React from "react";
 
 import Input from "./Compoments/DynamicField/Input";
-import UserForm from "./Compoments/WithOutCustomHooks/UserForm";
-import ClassTimer from "./Compoments/UseRefHook/ClassTimer";
-import ImageUpload from "./Compoments/ImageUpload/index";
+// import UserForm from "./Compoments/WithOutCustomHooks/UserForm";
+// import ClassTimer from "./Compoments/UseRefHook/ClassTimer";
+// import ImageUpload from "./Compoments/ImageUpload/index";
+import Application from "./Compoments/DynamicField/important";
 // import ClassCounter from './Compoments/UseState/classCounter'
 // import HookCounter from './Compoments/UseState/HookCounter1'
 // import HookCounter2 from './Compoments/UseState/HookCounter2'
@@ -23,23 +24,23 @@ import ImageUpload from "./Compoments/ImageUpload/index";
 // import Counter2 from './Compoments/Reducer/Counter2'
 // import Counter3 from './Compoments/Reducer/Counter3'
 
-import Main from "./Compoments/ContextWithReducer/main";
+// import Main from "./Compoments/ContextWithReducer/main";
 
-import CompomentC from "./Compoments/Context/CompomentC";
+// import CompomentC from "./Compoments/Context/CompomentC";
 import "./App.css";
-import { UserProvider, ChannelProvider } from "./userContext";
+// import { UserProvider, ChannelProvider } from "./userContext";
 
-import Reducers from "./Compoments/ContextReducers/Reducers";
+// import Reducers from "./Compoments/ContextReducers/Reducers";
 
-import DataFetchingOne from "./Compoments/FetchingData/DataFetchingOne";
-import DataFetchingUsingReducer from "./Compoments/FetchingData/DataFetchingUsingReducer";
+// import DataFetchingOne from "./Compoments/FetchingData/DataFetchingOne";
+// import DataFetchingUsingReducer from "./Compoments/FetchingData/DataFetchingUsingReducer";
 
 function App() {
   return (
     <div className="App">
       {/* <ClassTimer /> */}
-      {/* <UserForm />
-            <Input /> */}
+      {/* <UserForm />*/}
+      <Input />
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
       {/* <HookCounter2 /> */}
@@ -68,12 +69,13 @@ function App() {
       {/* <Counter3 /> */}
 
       {/* <h2>Global Reducer </h2>*/}
-      <Reducers />
+      {/* <Reducers /> */}
 
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingUsingReducer /> */}
       {/* <Main /> */}
-      <ImageUpload />
+      {/* <ImageUpload /> */}
+      <Application />
     </div>
   );
 }
