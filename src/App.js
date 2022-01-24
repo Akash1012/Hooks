@@ -4,7 +4,7 @@ import Input from "./Compoments/DynamicField/Input";
 // import UserForm from "./Compoments/WithOutCustomHooks/UserForm";
 // import ClassTimer from "./Compoments/UseRefHook/ClassTimer";
 // import ImageUpload from "./Compoments/ImageUpload/index";
-import Application from "./Compoments/DynamicField/important";
+// import Application from "./Compoments/DynamicField/important";
 // import ClassCounter from './Compoments/UseState/classCounter'
 // import HookCounter from './Compoments/UseState/HookCounter1'
 // import HookCounter2 from './Compoments/UseState/HookCounter2'
@@ -34,13 +34,14 @@ import "./App.css";
 
 // import DataFetchingOne from "./Compoments/FetchingData/DataFetchingOne";
 // import DataFetchingUsingReducer from "./Compoments/FetchingData/DataFetchingUsingReducer";
+import Debouncing from "./Compoments/debouncingReact";
 
 function App() {
   return (
     <div className="App">
       {/* <ClassTimer /> */}
       {/* <UserForm />*/}
-      <Input />
+      {/* <Input /> */}
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
       {/* <HookCounter2 /> */}
@@ -75,7 +76,8 @@ function App() {
       {/* <DataFetchingUsingReducer /> */}
       {/* <Main /> */}
       {/* <ImageUpload /> */}
-      <Application />
+      {/* <Application /> */}
+      <Debouncing />
     </div>
   );
 }
