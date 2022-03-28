@@ -148,7 +148,7 @@ const EditableTable = () => {
         const editable = isEditing(record);
         return (
           <Typography.Link
-            disabled={editingKey !== ""}
+            disabled={record.age == 32}
             onClick={() => edit(record)}
           >
             {record.age}

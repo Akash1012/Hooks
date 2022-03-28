@@ -36,11 +36,13 @@ import "./App.css";
 // import DataFetchingUsingReducer from "./Compoments/FetchingData/DataFetchingUsingReducer";
 import Debouncing from "./Compoments/debouncingReact";
 import EditableTable from "./Compoments/TableAntd";
+import EditableTablem from "./Compoments/TableAntd/andtTable";
+import Youtube from "./Compoments/TableAntd/youtube";
 
 function App() {
   return (
     <div className="App">
-      <EditableTable />
+      {/* <EditableTable /> */}
       {/* <ClassTimer /> */}
       {/* <UserForm />*/}
       {/* <Input /> */}
@@ -78,8 +80,10 @@ function App() {
       {/* <DataFetchingUsingReducer /> */}
       {/* <Main /> */}
       {/* <ImageUpload /> */}
-      <Application />
+      {/* <Application /> */}
       {/* <Debouncing /> */}
+      <Youtube />
+      <EditableTablem />
     </div>
   );
 }
