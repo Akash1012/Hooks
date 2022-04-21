@@ -1,0 +1,23 @@
+.box {
+    width: 500px;
+    height: 526px;
+    padding: 10px;
+    background-color: grey;
+    margin-left: 200px;
+    border-radius: 10px;
+    overflow: auto;
+    cursor: pointer;
+    /* display: flex; */
+
+}
+.main {
+    display: flex;
+}
+.notif {
+    padding-top: 16px;
+}
+
+.title {
+    margin-left: 17px;
+    
+}

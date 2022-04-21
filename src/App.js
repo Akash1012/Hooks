@@ -38,6 +38,7 @@ import Debouncing from "./Compoments/debouncingReact";
 import EditableTable from "./Compoments/TableAntd";
 import EditableTablem from "./Compoments/TableAntd/andtTable";
 import Youtube from "./Compoments/TableAntd/youtube";
+import Notification from "./Compoments/UI/notification";
 
 function App() {
   return (
@@ -82,8 +83,9 @@ function App() {
       {/* <ImageUpload /> */}
       {/* <Application /> */}
       {/* <Debouncing /> */}
-      <Youtube />
-      <EditableTablem />
+      {/* <Youtube />
+      <EditableTablem /> */}
+      <Notification />
     </div>
   );
 }
