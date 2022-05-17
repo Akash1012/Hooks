@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Input from "./Compoments/DynamicField/Input";
+import Comm from "./com";
 // import UserForm from "./Compoments/WithOutCustomHooks/UserForm";
 // import ClassTimer from "./Compoments/UseRefHook/ClassTimer";
 // import ImageUpload from "./Compoments/ImageUpload/index";
@@ -34,45 +35,49 @@ import "./App.css";
 
 // import DataFetchingOne from "./Compoments/FetchingData/DataFetchingOne";
 // import DataFetchingUsingReducer from "./Compoments/FetchingData/DataFetchingUsingReducer";
-import Debouncing from "./Compoments/debouncingReact";
-import EditableTable from "./Compoments/TableAntd";
-import EditableTablem from "./Compoments/TableAntd/andtTable";
-import Youtube from "./Compoments/TableAntd/youtube";
-import Notification from "./Compoments/UI/notification";
-import { getToken } from "./firebaseInit";
-import { onMessageListener } from "./firebaseInit";
+// import Debouncing from "./Compoments/debouncingReact";
+// import EditableTable from "./Compoments/TableAntd";
+// import EditableTablem from "./Compoments/TableAntd/andtTable";
+// import Youtube from "./Compoments/TableAntd/youtube";
+// import Notification from "./Compoments/UI/notification";
+// import { getToken } from "./firebaseInit";
+// import { onMessageListener } from "./firebaseInit";
+
+import Form1 from "./Compoments/ANTD/Form/index";
 
 function App() {
-  const [isTokenFound, setTokenFound] = useState(false);
+  //   const [isTokenFound, setTokenFound] = useState(false);
 
-  const [show, setShow] = useState(false);
-  const [notification, setNotification] = useState({ title: "", body: "" });
-  onMessageListener()
-    .then((payload) => {
-      setShow(true);
-      setNotification({
-        title: payload.notification.title,
-        body: payload.notification.body,
-      });
-      console.log(payload);
-    })
-    .catch((err) => console.log("failed: ", err));
-  console.log("Token found", isTokenFound);
-  useEffect(() => {
-    let data;
-    async function tokenFunc() {
-      data = await getToken(setTokenFound);
-      if (data) {
-        console.log("Token is", data);
-      }
-      return data;
-    }
-    tokenFunc();
-  }, [setTokenFound]);
+  //   const [show, setShow] = useState(false);
+  //   const [notification, setNotification] = useState({ title: "", body: "" });
+  //   onMessageListener()
+  //     .then((payload) => {
+  //       setShow(true);
+  //       setNotification({
+  //         title: payload.notification.title,
+  //         body: payload.notification.body,
+  //       });
+  //       console.log(payload);
+  //     })
+  //     .catch((err) => console.log("failed: ", err));
+  //   console.log("Token found", isTokenFound);
+  //   useEffect(() => {
+  //     let data;
+  //     async function tokenFunc() {
+  //       data = await getToken(setTokenFound);
+  //       if (data) {
+  //         console.log("Token is", data);
+  //       }
+  //       return data;
+  //     }
+  //     tokenFunc();
+  //   }, [setTokenFound]);
 
-  console.log("notificationnotification", notification);
+  //   console.log("notificationnotification", notification);
   return (
     <div className="App">
+      {/* <Form1 /> */}
+      <Comm />
       {/* <EditableTable /> */}
       {/* <ClassTimer /> */}
       {/* <UserForm />*/}
@@ -115,8 +120,8 @@ function App() {
       {/* <Debouncing /> */}
       {/* <Youtube />
       <EditableTablem /> */}
-      <Notification />
-      {notification.title}
+      {/* <Notification />
+      {notification.title} */}
     </div>
   );
 }
