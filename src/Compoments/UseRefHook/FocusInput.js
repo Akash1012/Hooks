@@ -1,17 +1,15 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from "react";
 
 function FocusInput() {
-    const inputRef = useRef(null)
+  const inputRef = useRef(null);
 
-    useEffect(() => {
-        inputRef.current.focus()
-    }, [])
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
-    return (
-        <div>
-            <input ref={inputRef} type="text" />
-        </div>
-    )
+  return (
+    <div>
+      <input ref={inputRef} type="text" />
+    </div>
+  );
 }
-
-export default FocusInput

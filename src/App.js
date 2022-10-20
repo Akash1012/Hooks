@@ -6,6 +6,7 @@ import Comm from "./com";
 // import ClassTimer from "./Compoments/UseRefHook/ClassTimer";
 // import ImageUpload from "./Compoments/ImageUpload/index";
 import Application from "./Compoments/DynamicField/important";
+import Timer from "./Compoments/StopStart";
 // import ClassCounter from './Compoments/UseState/classCounter'
 // import HookCounter from './Compoments/UseState/HookCounter1'
 // import HookCounter2 from './Compoments/UseState/HookCounter2'
@@ -20,6 +21,9 @@ import Application from "./Compoments/DynamicField/important";
 // import UseEffectTech from './Compoments/UseEffect/UseEffectTech'
 // import UseEffectIntervalClassCounter from './Compoments/UseEffect/UseEffectIntervalClassCounter'
 //import DataFetching from './Compoments/FetchingData/DataFetching'
+// import Xx from "./Compoments/StopStart/xx";
+// import ImageUpload from "./Compoments/ANTD/ImageUpload";
+import NewReducerHook from "./Compoments/New_UseReducerHooks";
 
 // import Counter1 from './Compoments/Reducer/Counter1'
 // import Counter2 from './Compoments/Reducer/Counter2'
@@ -35,7 +39,7 @@ import "./App.css";
 
 // import DataFetchingOne from "./Compoments/FetchingData/DataFetchingOne";
 // import DataFetchingUsingReducer from "./Compoments/FetchingData/DataFetchingUsingReducer";
-// import Debouncing from "./Compoments/debouncingReact";
+import Debouncing from "./Compoments/debouncingReact";
 // import EditableTable from "./Compoments/TableAntd";
 // import EditableTablem from "./Compoments/TableAntd/andtTable";
 // import Youtube from "./Compoments/TableAntd/youtube";
@@ -44,6 +48,7 @@ import "./App.css";
 // import { onMessageListener } from "./firebaseInit";
 
 import Form1 from "./Compoments/ANTD/Form/index";
+import Image from "./Compoments/ANTD/ImageUpload/copy";
 
 function App() {
   //   const [isTokenFound, setTokenFound] = useState(false);
@@ -76,8 +81,11 @@ function App() {
   //   console.log("notificationnotification", notification);
   return (
     <div className="App">
+      {/* <Image /> */}
       {/* <Form1 /> */}
-      <Comm />
+      {/* <Comm /> */}
+      {/* <Timer />
+      <Xx /> */}
       {/* <EditableTable /> */}
       {/* <ClassTimer /> */}
       {/* <UserForm />*/}
@@ -122,6 +130,8 @@ function App() {
       <EditableTablem /> */}
       {/* <Notification />
       {notification.title} */}
+      {/* <ImageUpload /> */}
+      <NewReducerHook />
     </div>
   );
 }
