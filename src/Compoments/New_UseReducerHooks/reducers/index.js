@@ -18,6 +18,14 @@ function reducers(state, action) {
     case "TOGGLE_TODO":
       return {
         ...state,
+        // todos: state.todos.filter((c) => {
+        //   if (c.id === action.payload.id) {
+        //     return (c.complete = !c.complete);
+        //   } else {
+        //     return c;
+        //   }
+        // }),
+
         todos: state.todos.map((todo) => {
           if (todo.id === action.payload) {
             return {
@@ -36,6 +44,7 @@ function reducers(state, action) {
     default:
       return state;
   }
+  console.log("akahs", state);
 }
 
 function newTodo(name) {
